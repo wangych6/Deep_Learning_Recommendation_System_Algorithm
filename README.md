@@ -1,4 +1,4 @@
-# Deep_Learning_Recommender_System_Algorithm
+# Deep_Learning_Recommendation_System_Algorithm
 推荐系统学习笔记～
 
 ## Sequential Recommendation
