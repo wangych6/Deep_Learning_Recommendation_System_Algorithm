@@ -1,6 +1,9 @@
 # Deep_Learning_Recommendation_System_Algorithm
 推荐系统学习笔记～
 
+## Basics
+
+
 ## Sequential Recommendation
 1. **KDD2018**. Deep Interest Network for Click-Through Rate Prediction (DIN).[[Paper](https://www.kdd.org/kdd2018/accepted-papers/view/deep-interest-network-for-click-through-rate-prediction)][[Note](https://github.com/wangych6/Deep_Learning_Recommendation_System_Algorithm/blob/master/docs/Sequential%20Recommendation/【序列建模】DIN深度兴趣网络.md)][[Code](https://github.com/wangych6/Deep_Learning_Recommendation_System_Algorithm/tree/master/codes/DIN)]
 
