@@ -5,19 +5,17 @@
 # @File    : train.py.py
 import os
 import sys
-from time import time
+
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
-import tensorflow as tf
 from tensorflow.keras.losses import binary_crossentropy
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.metrics import AUC
 
 from model import DIN
-from features_processor.UserBehavior import user_behavior
+from codes.features_processor.UserBehavior import user_behavior
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -30,7 +28,7 @@ def train():
     sequence_length = 50
 
     learning_rate = 0.001
-    batch_size = 1024
+    batch_size = 10000
     epochs = 20
     # ========================== Create dataset =======================
     feature_columns, behavior_list, train, val, test = user_behavior()

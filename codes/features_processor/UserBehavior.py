@@ -16,7 +16,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-FILE_ROOT = './../datasets/'  # 数据集的路径
+FILE_ROOT = '../datasets/'  # 数据集的路径
 MAX_LEN = 50  # DIN使用的历史行为序列长度
 
 
@@ -76,6 +76,12 @@ def user_behavior():
             else:
                 train_data.append([hist_list.copy(), [click_hist_list[i], cate_hist_list[i]], 1])
                 train_data.append([hist_list.copy(), [neg_list[i], cate_hist_list[i]], 0])
+
+    # shuffle
+    # random.shuffle(train_data)
+    # random.shuffle(val_data)
+    # random.shuffle(test_data)
+    # print('shuffle True')
 
     train = pd.DataFrame(train_data, columns=['click_hist', 'target_item', 'label'])
     val = pd.DataFrame(val_data, columns=['click_hist', 'target_item', 'label'])
