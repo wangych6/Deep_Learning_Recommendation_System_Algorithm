@@ -10,7 +10,7 @@ SASRec是比较早期对序列特征建模的一篇论文，也是很早利用se
 
 
 
-![image-20220506163031658](/Users/chester/Desktop/Deep_Learning_Recommender_System /docs/imges/image-20220506163031658.png)
+![image-20220506163031658](./../imges/image-20220506163031658.png)
 
 # Method
 
@@ -67,7 +67,7 @@ F理解起来就是使用一个函数从item embedding抽取出来的信息。M�
 
 这是最终性能：
 
-![image-20220506160247822](/Users/chester/Desktop/Deep_Learning_Recommender_System /docs/imges/image-20220506160247822.png)
+![image-20220506160247822](./../imges/image-20220506160247822.png)
 
 作者做了消融实验证明模型的作用：
 
@@ -91,7 +91,7 @@ F理解起来就是使用一个函数从item embedding抽取出来的信息。M�
 2. b vs c：加不加position embedding的区别，可以看出加了PE后会更关注最近的信息，不加的话会更加均匀的关注所有item；
 3. c vs d：可以看出更高层的attention更加关注最近的消息；
 
-![image-20220506160744578](/Users/chester/Desktop/Deep_Learning_Recommender_System /docs/imges/image-20220506160744578.png)
+![image-20220506160744578](./../imges/image-20220506160744578.png)
 
 ## 总结
 
